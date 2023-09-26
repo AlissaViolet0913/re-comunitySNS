@@ -1,0 +1,55 @@
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 70%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2%;
+  padding: 4vh;
+  background-color: rgba(255, 254, 245, 1);
+  border-radius: 5vh;
+}
+.word {
+  margin: 5% 0%;
+}
+
+.result {
+  display: flex;
+  margin: 5% 0;
+}
+.icon {
+  border-radius: 50%;
+  height: 14vh;
+  width: 14vh;
+  margin: 0 5%;
+}
+.detail {
+}
+.title {
+  display: flex;
+}
+.left {
+  width: 90%;
+}
+.typeIs {
+  margin-right: 1%;
+  width: 10%;
+  height: 10%;
+  background-color: rgba(217, 159, 28, 0.9);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.typeEve {
+  margin-right: 1%;
+  width: 10%;
+  height: 10%;
+  background-color: rgba(199, 197, 26, 1);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,296 @@
+.background {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.box {
+  padding-top: 1%;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-radius: 1%;
+  padding-bottom: 3%;
+
+  background-color: rgba(255, 254, 245, 1);
+  border: dashed 0.5vh rgba(209, 190, 79, 1);
+  box-shadow: 0 0 0 1vh rgba(250, 248, 242, 1), 0 0 0 2vh rgba(209, 190, 79, 1);
+  border-radius: 1vh;
+}
+
+.icon {
+  width: 16vh;
+  height: 16vh;
+  border-radius: 50%; /*サムネイル円型*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(233, 184, 125);
+  border: 3px solid rgba(194, 137, 66, 1);
+}
+
+.span {
+  color: red; /*必須文字*/
+}
+
+/* 未入力時に背景色を変更 */
+.errorInput {
+  background-color: rgb(243, 187, 187);
+}
+
+/*　各入力項目 */
+.islandName {
+  border: solid 0.3vh rgba(138, 121, 98, 1);
+  height: 5vh;
+  width: 28.5vw;
+  border-radius: 1vh;
+}
+
+.detail {
+  border: solid 0.3vh rgba(138, 121, 98, 1);
+  height: 20vh;
+  width: 30vw;
+  border-radius: 1vh;
+}
+
+.comboBoxUser {
+  border: solid 0.3vh rgba(138, 121, 98, 1);
+  height: 5vh;
+  width: 23vw;
+  border-radius: 1vh;
+}
+
+.Addtag {
+  border: solid 0.3vh rgba(138, 121, 98, 1);
+  height: 5vh;
+  width: 23vw;
+  border-radius: 1vh;
+}
+
+.fleCenter {
+  display: flex;
+  align-items: center;
+}
+
+.fileLabel {
+  width: 9vw;
+  padding: 4%;
+  color: #ffffff;
+  background-color: rgba(194, 137, 66, 1);
+  cursor: pointer;
+  border-radius: 3vh;
+  margin-left: 1.5vw;
+}
+
+.file {
+  display: none;
+}
+
+.tableCovered {
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  flex-direction: column; /* 縦方向に並べる */
+  height: auto;
+}
+
+.table {
+  width: 85%;
+  border-collapse: collapse;
+  border-spacing: 0 6vh; /* 行間幅 */
+  border-top: 1px solid rgb(149, 149, 149);
+  margin-bottom: 6%;
+}
+
+.th {
+  border-bottom: 1px solid rgb(180, 180, 180);
+  text-align: left;
+}
+.td {
+  border-bottom: 1px solid rgb(180, 180, 180);
+  text-align: left;
+}
+
+.th:last-child {
+  border-right: none; /* 最後の列の縦線を非表示*/
+}
+.td:last-child {
+  border-right: none; /* 最後の列の縦線を非表示*/
+}
+
+.tr {
+  height: 10vh; /* 行の高さ */
+}
+
+.td {
+  width: 100%;
+  padding: 4vh 0;
+}
+
+.th {
+  width: 45%;
+}
+
+.allContents {
+  height: 100%;
+  padding: 5%;
+  padding-top: 1vh;
+}
+
+.imgSide {
+  display: flex;
+  align-items: center;
+  height: 18.5vh;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.faileCenter {
+  display: flex;
+  align-items: center;
+}
+
+/* コンボボックス */
+
+.selectedValuesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selectedValue {
+  margin: 5px;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+  background-color: rgb(100, 207, 6);
+  border-radius: 1vh;
+}
+
+.delBtn {
+  background-color: white;
+  color: rgba(194, 137, 66, 1);
+  width: 2.9vh;
+  height: 2.9vh;
+}
+
+.selectIsland {
+  border: 2.5px solid rgba(138, 121, 98, 1);
+  width: 20vw;
+  height: 25vh;
+  color: rgb(105, 94, 79);
+  font-size: 2.5vh;
+}
+
+.islansTitle {
+  background-color: rgb(166 153 131);
+  color: white;
+}
+
+.option {
+  background-color: white;
+  color: rgb(105, 94, 79);
+}
+
+.row {
+  display: flex;
+}
+
+.nameFlex {
+  display: flex;
+  align-items: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.suggestionList {
+  background-color: white;
+  margin-bottom: 3%;
+}
+
+.li {
+  list-style: none;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.li:hover {
+  background-color: rgb(211, 211, 211);
+  border-radius: 5%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.addButton {
+  height: 4vh;
+  margin: 1vh;
+  width: 8vh;
+}
+
+.buttonSide {
+  display: flex;
+}
+
+/* addTag.tsx */
+.tagInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.spanTg {
+  color: rgb(255, 115, 0);
+}
+
+/* 未入力時に背景色を変更 */
+.errorInputTg {
+  background-color: rgb(247, 177, 140);
+}
+
+/* islandName */
+.islandNameText {
+}
+
+.input {
+  margin: 1vh;
+}
+
+.btn {
+  padding: 0.3vh 1.5vh;
+  border: none;
+  border-radius: 2vh;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 1vh;
+  margin-left: 1vh;
+  background-color: rgba(194, 137, 66, 1);
+  color: white;
+}
+
+.btn:disabled {
+  background-color: rgb(189 187 187);
+  color: white;
+}
+
+.add {
+  background-color: rgb(166 153 131);
+  padding-right: 0.7vw;
+  padding-left: 0.7vw;
+}
+
+.disabled {
+  background-color: rgba(209, 208, 206, 1);
+  color: white;
+}

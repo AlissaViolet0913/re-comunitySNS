@@ -1,0 +1,210 @@
+.content {
+  padding-bottom: 150px;
+  min-height: 70vh;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3vh;
+  padding-left: 4vh;
+}
+
+.titleWrapper {
+  padding: 1vh;
+  background-color: rgba(132, 207, 196, 1);
+}
+
+.content p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 2.8vh;
+}
+
+.icon {
+  border-radius: 50%;
+  height: 6vh;
+  width: 6vh;
+  border: 0.3vh solid black;
+}
+
+.content .text {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+.userInfo {
+  font-weight: bold;
+}
+
+.sentUser {
+  text-align: end;
+  padding-right: 20px;
+}
+
+.receivedUser {
+  padding-left: 20px;
+}
+
+.msg {
+  display: flex;
+  padding: 20px;
+  margin: 10px 20px 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgb(164, 164, 164);
+  align-items: center;
+}
+
+.sent {
+  max-width: 60%;
+  background-color: rgba(207, 203, 112, 1);
+  color: black;
+  border-top-right-radius: 15px;
+  flex-direction: row-reverse;
+  padding: 1vh;
+  float: right;
+}
+
+.received {
+  max-width: 60%;
+  background-color: #fafafa;
+  border-top-left-radius: 15px;
+  float: left;
+  padding: 1vh;
+}
+
+.sendMsg {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  border-top: 1px solid lightgray;
+  margin-left: -5px;
+  padding: 3vh;
+  background-color: rgba(132, 207, 196, 1);
+}
+
+.editInput {
+  background-color: rgba(132, 207, 196, 1);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b4b4b4;
+  font-weight: bold;
+  font-size: 3vh;
+  padding-left: 4vh;
+  color: #858585;
+}
+
+.msgs {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+}
+
+.inputText {
+  width: 70%;
+  height: 4vh;
+  margin-left: 5px;
+  margin-bottom: -3px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+
+.editButton {
+  background-color: rgb(180, 206, 50);
+  margin-left: 1%;
+  color: #ffffff;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  margin-left: 4vh;
+  width: 90px;
+}
+
+.editButtonA {
+  background-color: rgb(180, 206, 50);
+  margin-top: 1vh;
+  margin-left: 4vh;
+  margin-bottom: 1vh;
+  color: white;
+  width: 90px;
+}
+
+.editButtonB {
+  background-color: rgb(87, 206, 54);
+  margin-top: 1vh;
+  margin-left: 4vh;
+  margin-bottom: 1vh;
+  border-radius: 50%;
+  margin-left: 1%;
+  color: rgb(255, 255, 255);
+  width: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* 送信ボタン */
+.btn {
+  display: inline-block;
+  width: 10vh;
+  font-size: 3.2vh;
+  cursor: pointer;
+  background-color: #b9b560;
+}
+.btn:disabled {
+  background-color: gray;
+  color: black;
+}
+
+.btnWrapper {
+  margin-left: 15px;
+}
+
+/* @media (max-width: 775px) {
+  p {
+    font-size: 20px;
+  }
+  .sent {
+    padding: 10px 10px 0 10px;
+  }
+  .received {
+    padding: 10px 10px 0 10px;
+  }
+  img {
+    height: 35px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 15px;
+  }
+  .sent {
+    padding: 7px 7px 0 7px;
+  }
+  .received {
+    padding: 7px 7px 0 7px;
+  }
+  img {
+    height: 30px;
+    margin-top: -7px;
+  }
+} */

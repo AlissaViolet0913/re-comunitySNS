@@ -1,0 +1,101 @@
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/login/login.png");
+  background-size: cover;
+  background-position: center center;
+  overflow-y: hidden;
+}
+
+.board {
+  margin: auto;
+  width: 80vh;
+  height: 75%;
+  margin-top: 32.5vh;
+  text-align: center;
+}
+
+.boardTitle {
+  text-align: center;
+  color: rgba(115, 101, 74, 1);
+  margin-top: 0;
+}
+
+.logo {
+  height: 30vh;
+}
+
+.img {
+  width: 100%;
+  height: 55vh;
+}
+
+.inputA {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 2px solid rgba(50, 67, 52, 0.1);
+  width: 55.2vh;
+  height: 4vh;
+  font-size: 2.5vh;
+}
+
+.inputB {
+  border: 2px solid rgba(50, 67, 52, 0.1);
+  width: 55.2vh;
+  height: 4vh;
+  font-size: 3vh;
+}
+
+.link {
+  color: red;
+}
+
+.button {
+  font-size: 2.5vh;
+  width: 14vh;
+  margin-top: 2vh;
+  font-weight: bold;
+  border-radius: 10px;
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid rgba(135, 181, 140, 1);
+  box-shadow: 5px 5px rgba(110, 148, 115, 1);
+  transition: 0.3s ease-in-out;
+  height: 7vh;
+  background-color: white;
+}
+
+.button:hover {
+  box-shadow: none;
+  transform: translate(5px, 5px);
+  color: rgba(94, 70, 44, 0.6);
+}
+
+.button:disabled {
+  color: white;
+  background-color: rgba(199, 199, 199, 1);
+  border: 3px solid rgba(199, 199, 199, 1);
+  box-shadow: none;
+  transform: none;
+}
+
+.buttonBox {
+  display: inline-block;
+}
+
+.linkBox {
+  margin-top: 3%;
+  text-align: right;
+}
+.link {
+  color: rgba(217, 156, 20, 1);
+  ecoration: none;
+}
+
+.errorMessage {
+  font-size: 2.3vh;
+  color: red;
+  margin-bottom: 0;
+}
