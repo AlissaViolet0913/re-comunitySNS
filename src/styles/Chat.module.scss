@@ -1,23 +1,24 @@
-@charset "UTF-8";
 .content {
   padding-bottom: 150px;
   min-height: 70vh;
-}
-.content p {
-  display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-size: 2.8vh;
-}
-.content .text {
-  font-weight: 500;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  overflow-wrap: break-word;
+
+  p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 2.8vh;
+  }
+
+  .text {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+  }
 }
 
 .title {
@@ -28,7 +29,7 @@
 
 .titleWrapper {
   padding: 1vh;
-  background-color: rgb(132, 207, 196);
+  background-color: rgba(132, 207, 196, 1);
 }
 
 .icon {
@@ -62,7 +63,7 @@
 
 .sent {
   max-width: 60%;
-  background-color: rgb(207, 203, 112);
+  background-color: rgba(207, 203, 112, 1);
   color: black;
   border-top-right-radius: 15px;
   flex-direction: row-reverse;
@@ -89,11 +90,11 @@
   border-top: 1px solid lightgray;
   margin-left: -5px;
   padding: 3vh;
-  background-color: rgb(132, 207, 196);
+  background-color: rgba(132, 207, 196, 1);
 }
 
 .editInput {
-  background-color: rgb(132, 207, 196);
+  background-color: rgba(132, 207, 196, 1);
   border: none;
   outline: none;
   border-bottom: 1px solid #b4b4b4;
@@ -166,10 +167,11 @@
   font-size: 3.2vh;
   cursor: pointer;
   background-color: #b9b560;
-}
-.btn:disabled {
-  background-color: gray;
-  color: black;
+
+  &:disabled {
+    background-color: gray;
+    color: black;
+  }
 }
 
 .btnWrapper {
@@ -191,7 +193,7 @@
       margin-top: -10px;
     }
   }
-
+  
   @media (max-width: 500px) {
     p {
       font-size: 15px;
@@ -206,4 +208,4 @@
       height: 30px;
       margin-top: -7px;
     }
-  } *//*# sourceMappingURL=Chat.module.css.map */
+  } */

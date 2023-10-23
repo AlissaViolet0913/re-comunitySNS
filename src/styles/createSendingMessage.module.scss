@@ -1,6 +1,6 @@
-@charset "UTF-8";
 .overlay {
   z-index: 1; /* 重ねた時の順番 */
+
   /* 画面全体を覆う */
   position: fixed;
   top: 0;
@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+
   /* 画面の中央に要素を表示 */
   display: flex;
   align-items: center;
@@ -24,7 +25,6 @@
   height: 49vh;
   position: relative;
 }
-
 .messageName {
   margin-top: 0;
 }
@@ -46,7 +46,6 @@
   height: 7vh;
   margin-top: 4vh;
 }
-
 .main2 {
   height: 7vh;
   margin-top: 19vh;
@@ -65,13 +64,12 @@
 }
 
 .textSending {
-  outline: solid 0.3vh rgb(209, 227, 172);
+  outline: solid 0.3vh rgba(209, 227, 172, 1);
   width: 71vh;
   height: 16vh;
   padding: 2vh;
   border-radius: 3vh;
 }
-
 .name {
   margin-right: 2vh;
 }
@@ -82,30 +80,33 @@
   width: 21vh;
   border-radius: 3vh;
   font-weight: bold;
-  color: rgb(94, 70, 44);
-  border: 3px solid rgb(179, 209, 115);
-  box-shadow: 0.7vh 0.7vh rgb(179, 209, 115);
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid rgba(179, 209, 115, 1);
+  box-shadow: 0.7vh 0.7vh rgba(179, 209, 115, 1);
   transition: 0.3s ease-in-out;
   background-color: white;
-}
-.btn:disabled {
-  background-color: rgb(189, 187, 187);
-  color: white;
-  border: none;
-  transform: none;
-  box-shadow: none;
-}
-.btn:hover {
-  box-shadow: none;
-  transform: translate(5px, 5px);
-  color: rgb(94, 70, 44);
-}
-.btn:disabled {
-  background-color: rgb(189, 187, 187);
-  color: white;
-  border: none;
-  transform: none;
-  box-shadow: none;
+
+  &:disabled {
+    background-color: rgb(189 187 187);
+    color: white;
+    border: none;
+    transform: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: rgba(94, 70, 44, 1);
+  }
+
+  &:disabled {
+    background-color: rgb(189 187 187);
+    color: white;
+    border: none;
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 .btn2 {
@@ -114,16 +115,17 @@
   width: 21vh;
   border-radius: 3vh;
   font-weight: bold;
-  color: rgb(94, 70, 44);
-  border: 3px solid rgb(179, 209, 115);
-  box-shadow: 0.7vh 0.7vh rgb(179, 209, 115);
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid rgba(179, 209, 115, 1);
+  box-shadow: 0.7vh 0.7vh rgba(179, 209, 115, 1);
   transition: 0.3s ease-in-out;
   background-color: white;
-}
-.btn2:hover {
-  box-shadow: none;
-  transform: translate(5px, 5px);
-  color: rgb(94, 70, 44);
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: rgba(94, 70, 44, 1);
+  }
 }
 
 .btn3 {
@@ -132,16 +134,17 @@
   width: 21vh;
   border-radius: 3vh;
   font-weight: bold;
-  color: rgb(94, 70, 44);
-  border: 3px solid rgb(179, 209, 115);
-  box-shadow: 0.7vh 0.7vh rgb(179, 209, 115);
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid rgba(179, 209, 115, 1);
+  box-shadow: 0.7vh 0.7vh rgba(179, 209, 115, 1);
   transition: 0.3s ease-in-out;
   background-color: white;
-}
-.btn3:hover {
-  box-shadow: none;
-  transform: translate(5px, 5px);
-  color: rgb(94, 70, 44);
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: rgba(94, 70, 44, 1);
+  }
 }
 
 .input {
@@ -150,4 +153,4 @@
 
 .messageName {
   margin: auto;
-}/*# sourceMappingURL=createSendingMessage.module.css.map */
+}
