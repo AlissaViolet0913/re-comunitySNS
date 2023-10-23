@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .flex {
   display: flex;
 }
@@ -9,9 +8,10 @@
   margin-top: 5vh;
   margin-bottom: 5vh;
   text-align: center;
-  background-color: rgb(255, 254, 245);
-  border: dashed 0.5vh rgb(138, 121, 98);
-  box-shadow: 0 0 0 1vh rgb(250, 248, 242), 0 0 0 2vh rgb(138, 121, 98);
+
+  background-color: rgba(255, 254, 245, 1);
+  border: dashed 0.5vh rgba(138, 121, 98, 1);
+  box-shadow: 0 0 0 1vh rgba(250, 248, 242, 1), 0 0 0 2vh rgba(138, 121, 98, 1);
   border-radius: 1vh;
 }
 
@@ -57,34 +57,37 @@
   border-radius: 3vh;
   margin-top: 15px;
   font-weight: bold;
-  color: rgb(94, 70, 44);
-  border: 3px solid rgb(255, 182, 112);
-  box-shadow: 0.7vh 0.7vh rgb(255, 182, 112);
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid rgba(255, 182, 112, 1);
+  box-shadow: 0.7vh 0.7vh rgba(255, 182, 112, 1);
   transition: 0.3s ease-in-out;
   background-color: white;
-}
-.edit_btn:hover {
-  box-shadow: none;
-  transform: translate(5px, 5px);
-  color: rgba(94, 70, 44, 0.6);
-}
-.edit_btn:dashed {
-  color: rgb(212, 212, 212);
-  border: 3px solid rgb(212, 212, 212);
-  box-shadow: 0.7vh 0.7vh rgb(212, 212, 212);
-  height: 7vh;
-  width: 22vh;
-  border-radius: 3vh;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
-  background-color: white;
-  margin-top: 2vh;
-}
-.edit_btn:disabled {
-  background-color: rgb(189, 187, 187);
-  color: white;
-  border: none;
-  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: rgba(94, 70, 44, 0.6);
+  }
+
+  &:dashed {
+    color: rgba(212, 212, 212, 1);
+    border: 3px solid rgba(212, 212, 212, 1);
+    box-shadow: 0.7vh 0.7vh rgba(212, 212, 212, 1);
+    height: 7vh;
+    width: 22vh;
+    border-radius: 3vh;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    margin-top: 2vh;
+  }
+
+  &:disabled {
+    background-color: rgb(189 187 187);
+    color: white;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 .delete_btn {
@@ -97,10 +100,11 @@
   border: 3px solid gray;
   transition: 0.3s ease-in-out;
   background-color: gray;
-}
-.delete_btn:hover {
-  background-color: white;
-  color: gray;
+
+  &:hover {
+    background-color: white;
+    color: gray;
+  }
 }
 
 .errorText {
@@ -109,7 +113,7 @@
 }
 
 .noEdit {
-  color: rgb(94, 70, 44);
+  color: rgba(94, 70, 44, 1);
   background-color: white;
   border: 3px solid #27acd9;
   box-shadow: 0.7vh 0.7vh #27acd9;
@@ -118,8 +122,9 @@
   border-radius: 3vh;
   font-weight: bold;
   transition: 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+  }
 }
-.noEdit:hover {
-  box-shadow: none;
-  transform: translate(5px, 5px);
-}/*# sourceMappingURL=eventDetail.module.css.map */

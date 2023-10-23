@@ -17,6 +17,9 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
 }
+.headerItem .hambuger {
+  margin-right: 0;
+}
 
 .userDataFlex {
   display: flex;
@@ -28,10 +31,6 @@ header {
   white-space: nowrap;
   display: flex;
   align-items: center;
-}
-
-.headerItem .hambuger {
-  margin-right: 0;
 }
 
 .search {
@@ -77,10 +76,6 @@ header {
 }
 .listItem:hover {
   text-decoration: none;
-}
-
-.menu ul {
-  padding-inline-start: 0px;
 }
 
 .menuGroupItemLinkWrapper {
@@ -137,6 +132,9 @@ header {
   background-color: rgb(100, 209, 191);
   transition: ease 0.5s;
 }
+.menu ul {
+  padding-inline-start: 0px;
+}
 
 .menuGroup {
   display: flex;
@@ -153,8 +151,7 @@ header {
   margin-bottom: 1rem;
   color: rgb(255, 255, 255);
 }
-
-.menuGroupItemLink:hover {
+.menuGroupItem:hover {
   color: rgb(173, 158, 142);
 }
 

@@ -1,6 +1,6 @@
-@charset "UTF-8";
 .overlay {
   z-index: 1; /* 重ねた時の順番 */
+
   /* 画面全体を覆う */
   position: fixed;
   top: 0;
@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+
   /* 画面の中央に要素を表示 */
   display: flex;
   align-items: center;
@@ -34,6 +35,8 @@
 
 .allContents {
   height: 50vh;
+  justify-content: center; /* 水平方向 */
+  align-items: center; /* 垂直方向 */
   flex-direction: column; /* 縦方向 */
   display: flex;
 }
@@ -46,40 +49,27 @@
 
 .main {
   width: auto;
-  margin: auto;
+  height: 40vh;
+  width: 70%;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
 }
 
 .title {
-  align-items: center; /* 垂直方向 */
-  justify-content: center; /* 水平方向 */
-  flex-direction: column; /* 縦方向 */
+  height: 10vh;
+  margin: auto;
 }
 
 .flexIcon {
   display: flex;
-}
-.flexIcon img {
-  width: 80px;
-  height: 80px;
-  padding-left: 60px;
-}
-.flexIcon p {
-  padding-left: 80px;
-}
 
-.h3 {
-  margin-top: 0;
-}
+  img {
+    width: 80px;
+    height: 80px;
+    padding-left: 60px;
+  }
 
-.text {
-  margin-top: 0;
+  p {
+    padding-left: 80px;
+  }
 }
-
-#deleteCheck {
-  width: 60%;
-  margin-top: 3vh;
-}
-
-.dCheck_btn {
-  margin: 100px 0 0 0;
-}/*# sourceMappingURL=createDeletingCheck.module.css.map */
