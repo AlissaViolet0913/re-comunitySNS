@@ -1,10 +1,98 @@
+@charset "UTF-8";
+.App {
+  background-image: url("/public/images/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+  color: rgb(95, 95, 95);
+  font-size: 2.5vh;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+input {
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  padding-left: 0.5vh;
+}
+
+textarea {
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  padding-left: 0.5vh;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+}
+
+button {
+  font-size: 2.5vh;
+  border: none;
+  border-radius: 2vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: rgb(220, 158, 108);
+  color: white;
+  margin-left: 0.5vh;
+}
+
+button:hover {
+  box-shadow: none;
+  transform: translateY(0.5vh);
+}
+
+th {
+  font-size: 2vh;
+}
+
+h2 {
+  color: rgb(118, 102, 82);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* background-image: url("/public/images/bg.png"); */
 .all {
   display: flex;
   text-align: center;
+  margin-top: 15vh;
 }
 
 .back {
-  background-color: rgba(255, 254, 245, 1);
+  background-color: rgb(255, 254, 245);
   margin-top: 2%;
   padding-top: 1%;
   height: 100%;
@@ -13,9 +101,8 @@
   text-align: center;
   border-radius: 1%;
   width: 65%;
-
-  border: dashed 0.5vh rgba(138, 121, 98, 1);
-  box-shadow: 0 0 0 1vh rgba(250, 248, 242, 1), 0 0 0 2vh rgba(138, 121, 98, 1);
+  border: dashed 0.5vh rgb(138, 121, 98);
+  box-shadow: 0 0 0 1vh rgb(250, 248, 242), 0 0 0 2vh rgb(138, 121, 98);
   border-radius: 1vh;
 }
 
@@ -27,7 +114,7 @@
 
 .input {
   width: 75vh;
-  border: solid 0.3vh rgba(138, 121, 98, 1);
+  border: solid 0.3vh rgb(138, 121, 98);
   border-radius: 1vh;
 }
 
@@ -47,17 +134,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .detail {
   width: 75vh;
   height: 17vh;
   font-size: 2.2vh;
   margin: 3vh 0;
   text-align: left;
-  border: solid 0.3vh rgba(138, 121, 98, 1);
+  border: solid 0.3vh rgb(138, 121, 98);
   border-radius: 1vh;
-}
-
-.islandName {
 }
 
 .detail {
@@ -93,9 +178,9 @@
   border-radius: 3vh;
   margin-top: 15px;
   font-weight: bold;
-  color: rgba(94, 70, 44, 1);
-  border: 3px solid rgba(255, 182, 112, 1);
-  box-shadow: 0.7vh 0.7vh rgba(255, 182, 112, 1);
+  color: rgb(94, 70, 44);
+  border: 3px solid rgb(255, 182, 112);
+  box-shadow: 0.7vh 0.7vh rgb(255, 182, 112);
   transition: 0.3s ease-in-out;
   background-color: white;
 }
@@ -112,7 +197,7 @@
 }
 
 .noEdit {
-  color: rgba(94, 70, 44, 1);
+  color: rgb(94, 70, 44);
   background-color: white;
   border: 3px solid #27acd9;
   box-shadow: 0.7vh 0.7vh #27acd9;
@@ -122,7 +207,6 @@
   font-weight: bold;
   transition: 0.3s ease-in-out;
 }
-
 .noEdit:hover {
   box-shadow: none;
   transform: translate(5px, 5px);
@@ -172,6 +256,7 @@
   width: 23%;
   height: 9vh;
 }
+
 .td {
   border-bottom: 1px solid rgb(180, 180, 180);
   text-align: left;
@@ -179,4 +264,4 @@
 
 .faileCenter {
   padding: 3vh;
-}
+}/*# sourceMappingURL=islandEdit.module.css.map */

@@ -1,5 +1,92 @@
+@charset "UTF-8";
+.App {
+  background-image: url("/public/images/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+  color: rgb(95, 95, 95);
+  font-size: 2.5vh;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+input {
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  padding-left: 0.5vh;
+}
+
+textarea {
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  padding-left: 0.5vh;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+}
+
+button {
+  font-size: 2.5vh;
+  border: none;
+  border-radius: 2vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: rgb(220, 158, 108);
+  color: white;
+  margin-left: 0.5vh;
+}
+
+button:hover {
+  box-shadow: none;
+  transform: translateY(0.5vh);
+}
+
+th {
+  font-size: 2vh;
+}
+
+h2 {
+  color: rgb(118, 102, 82);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* background-image: url("/public/images/bg.png"); */
 .menubar {
-  background-color: #c3d6af;
+  background-color: rgb(145, 210, 199);
   width: 17%;
   height: auto;
   min-height: 81.5vh;
@@ -21,11 +108,11 @@
   grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
   justify-items: center;
   align-content: center;
-  color: rgba(143, 119, 99, 1);
+  color: rgb(143, 119, 99);
 }
 
 .link {
-  color: rgba(102, 85, 70, 1);
+  color: rgb(102, 85, 70);
   text-decoration: none;
   font-weight: bold;
   word-spacing: 0;
@@ -38,13 +125,12 @@
   font-family: calibri light;
   cursor: pointer;
 }
-
 .link:hover {
   color: rgba(207, 159, 89, 0.8);
 }
 
 .link2 {
-  color: rgba(102, 85, 70, 1);
+  color: rgb(102, 85, 70);
   text-decoration: none;
   font-weight: bold;
   word-spacing: 0;
@@ -57,7 +143,6 @@
   font-family: calibri light;
   cursor: pointer;
 }
-
 .link2:hover {
   color: rgba(207, 159, 89, 0.8);
 }
@@ -68,9 +153,9 @@
   text-align: center;
   position: relative;
   border-radius: 5px;
-  outline: 2px solid rgba(212, 184, 80, 1);
+  outline: 2px solid rgb(212, 184, 80);
   outline-offset: 8px;
-  background: rgba(255, 255, 222, 1);
+  background: rgb(255, 255, 222);
   color: rgba(130, 105, 82, 0.8);
   text-align: center;
 }
@@ -82,4 +167,4 @@
   margin-top: auto;
   background-color: white;
   border: outset;
-}
+}/*# sourceMappingURL=menubar.module.css.map */

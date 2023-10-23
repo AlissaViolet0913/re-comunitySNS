@@ -1,4 +1,7 @@
-@charset "UTF-8";
+$cwhite: #ffebee;
+$white: white;
+$pieceIsland: #078b3a;
+
 .all {
   text-align: center;
   width: auto;
@@ -22,9 +25,9 @@
 .information {
   margin-top: 6vh;
   margin-left: 3vh;
-  background-color: #ffebee;
+  background-color: $cwhite;
   border: dashed 3px #e57373;
-  box-shadow: 0 0 0 10px #ffebee, 0 0 0 25px #e57373;
+  box-shadow: 0 0 0 10px $cwhite, 0 0 0 25px #e57373;
   border-radius: 3vh;
   font-weight: 500;
   width: 40vw;
@@ -41,7 +44,7 @@
 
 .news {
   margin: 1%;
-  color: rgb(135, 69, 68);
+  color: rgba(135, 69, 68, 1);
   padding-bottom: 2%;
   padding-top: 1.5%;
 }
@@ -67,9 +70,10 @@
   flex-basis: calc(33.33% - 10px);
   margin-bottom: 10px;
   align-items: center;
-}
-.island:hover {
-  color: #078b3a;
+
+  &:hover {
+    color: $pieceIsland;
+  }
 }
 
 .events {
@@ -106,14 +110,17 @@
   padding: 5px;
   border: solid 5px #00c84d;
   border-radius: 70% 90%/90% 80%;
-  box-shadow: 0 0 0 10px 0c84d, 0 0 0 20px 0c84d;
+  box-shadow: 0 0 0 10px 00c84d, 0 0 0 20px 00c84d;
   position: relative;
   margin: 1vw;
-}
-.icon:hover {
-  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-  border: solid 5px #078b3a;
+
+  // &はhoverのように半角スペースを空けたくない場合は省略不可
+  // ＆を入力せずにやってしまうとCSSの方で空白ができてしまい、正しく読み込まれなくなってしまう
+  &:hover {
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    border: solid 5px $pieceIsland;
+  }
 }
 
 .iconB {
@@ -127,12 +134,13 @@
   padding: 5px;
   border: solid 5px #e79e00;
   border-radius: 70% 90%/90% 80%;
-  box-shadow: 0 0 0 10px 0c84d, 0 0 0 20px 0c84d;
+  box-shadow: 0 0 0 10px 00c84d, 0 0 0 20px 00c84d;
   margin: 1vw;
-}
-.iconB:hover {
-  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
+
+  &:hover {
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
 }
 
 .buttonA {
@@ -142,15 +150,16 @@
   height: 6.5vh;
   font-size: 100%;
   border-radius: 0.5vh;
-  color: white;
+  color: $white;
   transition: all 0.2s ease;
   margin-bottom: 1.5vh;
   border-radius: 20px 60px/60px 30px;
   box-shadow: 0 0 0 10px rgb(89, 212, 134), 0 0 0 20px rgb(0, 182, 124);
-}
-.buttonA:hover {
-  background-color: rgb(139, 225, 170);
-  box-shadow: 0 0 0 10px rgb(139, 225, 170), 0 0 0 20px rgb(0, 182, 124);
+
+  &:hover {
+    background-color: rgb(139, 225, 170);
+    box-shadow: 0 0 0 10px rgb(139, 225, 170), 0 0 0 20px rgb(0, 182, 124);
+  }
 }
 
 .buttonB {
@@ -160,14 +169,21 @@
   height: 6.5vh;
   font-size: 100%;
   border-radius: 0.5vh;
-  color: white;
+  color: $white;
   transition: all 0.2s ease;
   border-radius: 20px 60px/60px 30px;
   box-shadow: 0 0 0 10px rgb(255, 200, 98), 0 0 0 20px rgb(216, 171, 20);
+
+  &:hover {
+    background-color: rgb(255, 215, 86);
+    box-shadow: 0 0 0 10px rgb(255, 215, 86), 0 0 0 20px rgb(216, 171, 20);
+  }
 }
-.buttonB:hover {
-  background-color: rgb(255, 215, 86);
-  box-shadow: 0 0 0 10px rgb(255, 215, 86), 0 0 0 20px rgb(216, 171, 20);
+
+.displayAll {
+  // align-items: center;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .main {
@@ -179,6 +195,14 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.tabs {
+  // padding: 3%;
+}
+
+// .down {
+//   margin-bottom: 5%;
+// }
 
 .p {
   margin: 1%;
@@ -196,10 +220,11 @@
   cursor: pointer;
   color: #016d2b;
   font-size: 2.5vh;
-}
-.islandName:hover {
-  background-size: 100% 40%;
-  color: #078b3a;
+
+  &:hover {
+    background-size: 100% 40%;
+    color: $pieceIsland;
+  }
 }
 
 .eventName {
@@ -210,10 +235,11 @@
   cursor: pointer;
   color: #b77e04;
   font-size: 2.5vh;
-}
-.eventName:hover {
-  background-size: 100% 40%;
-  color: #e79e00;
+
+  &:hover {
+    background-size: 100% 40%;
+    color: #e79e00;
+  }
 }
 
 .link {
@@ -237,6 +263,7 @@
     transform: translateY(0px);
   }
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -247,15 +274,18 @@
     width: 100%;
     height: 100%;
   }
+
   .logo {
     width: 40%;
     height: 100%;
   }
+
   .onImg {
     position: absolute;
     top: 15%;
   }
 }
+
 /* 波animation */
 .wave {
   bottom: 0;
@@ -268,12 +298,10 @@
 .move > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
-
 .move > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
-
 .move > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
@@ -287,4 +315,4 @@
   100% {
     transform: translate3d(85px, 0, 0);
   }
-}/*# sourceMappingURL=index.module.css.map */
+}
