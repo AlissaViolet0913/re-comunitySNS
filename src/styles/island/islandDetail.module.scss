@@ -1,0 +1,185 @@
+@import "../../App";
+$white: white;
+$bg: rgba(255, 254, 245, 1);
+
+.flex {
+  display: flex;
+  text-align: center;
+  margin-top: $mgTop;
+  background-image: url("/public/images/back.png");
+}
+
+.back {
+  // background-color: rgba(255, 254, 245, 1);
+  margin-top: 2%;
+  padding-top: 1%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border-radius: 1%;
+  width: 65%;
+  margin-bottom: 5vh;
+}
+
+.detail {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  background-color: $bg;
+  box-shadow: 0 0 0 0.1vh rgba(138, 121, 98, 1);
+  border-radius: 5vh 100vh/20vh 5vh;
+}
+
+.editbox {
+  text-align: right;
+  margin-top: 2%;
+}
+
+.btn1 {
+  background-color: rgb(255, 186, 59);
+  width: 24vh;
+  margin-top: 15px;
+  font-weight: bold;
+  border-radius: 60% 80% / 100% 80%;
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid rgba(255, 182, 112, 1);
+  box-shadow: 0.7vh 0.7vh rgb(255, 142, 35);
+  transition: 0.3s ease-in-out;
+  height: 8vh;
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: rgba(94, 70, 44, 0.6);
+    border-radius: 100% 80px / 80px 100%;
+  }
+}
+
+.btn2 {
+  background-color: rgb(107, 211, 255);
+  width: 24vh;
+  margin-left: 10%;
+  margin-top: 10vh;
+  font-weight: bold;
+  border-radius: 50% 80% / 110% 80%;
+  color: rgba(94, 70, 44, 1);
+  border: 3px solid #79cfec;
+  box-shadow: 0.7vh 0.7vh #56aecb;
+  height: 8vh;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: rgba(94, 70, 44, 0.6);
+    border-radius: 100% 80px / 80px 100%;
+  }
+}
+
+.editbox {
+  margin-right: 10%;
+}
+
+#edit_btn {
+  font-weight: bold;
+  background-color: #ffed64;
+  border: 3px solid rgb(247, 242, 243);
+  // width: 20vh;
+  color: rgb(118, 70, 3);
+  margin-top: 5vh;
+  margin-bottom: 3%;
+  border-radius: 50% 80% / 110% 80%;
+  transition: 0.3s ease-in-out;
+}
+.editIcon {
+  width: 100px;
+}
+
+.icon {
+  width: 23vh;
+  height: 23vh;
+
+  border-radius: 50%; /*サムネイル円型*/
+}
+
+/* 以下Eventのみ */
+.table {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.tbody {
+  width: 90%;
+}
+.th {
+  text-align: right;
+  width: 20%;
+  font-weight: bold;
+}
+.td {
+  width: 70%;
+  height: 10vh;
+}
+
+.textDetail {
+  width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+/* すでに住民許可申請を送っている場合 */
+.span {
+  color: red;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.tagArea {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.ribbon3 {
+  display: inline-block;
+  position: relative;
+  height: 6vh;
+  text-align: center;
+  padding: 0.7vh 0;
+  margin: 0 1vh;
+  background-color: #ff6e9f;
+  color: $white;
+  box-sizing: border-box;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: 0px;
+    border-width: 0 20px 20px 0;
+    border-style: solid;
+    border-color: #6e1331 $bg #f25186;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.ribbon3 h3 {
+  padding: 0px 2vh;
+  // padding-top: 0.3vh;
+  border-top: dashed 0.5vh rgba(255, 255, 255, 0.5);
+  border-bottom: dashed 0.5vh rgba(255, 255, 255, 0.5);
+  line-height: 3.8vh;
+  font-size: 2.5vh;
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 1vh;
+}

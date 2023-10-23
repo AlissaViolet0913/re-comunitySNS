@@ -127,9 +127,7 @@ const Header = () => {
             searchWord,
           )}&radio=${encodeURIComponent(selectedRadio)}`}
         >
-          <button className={styles.btn} name="検索">
-            検索
-          </button>
+          <img src="/images/search.png" className={styles.btn}></img>
         </Link>
       </div>
 

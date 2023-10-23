@@ -1,11 +1,16 @@
-@charset "UTF-8";
+$backcolor: rgb(145, 210, 199);
+$mgTop: 15vh;
+
 .App {
-  background-color: rgb(145, 210, 199);
+  background-color: $backcolor;
+  // background-image: url("/public/images/back.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
-  color: rgb(95, 95, 95);
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN",
+    "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+  color: rgba(95, 95, 95, 1);
   font-size: 2.5vh;
   min-height: 100vh;
   width: 100%;
@@ -22,33 +27,31 @@ textarea {
   font-size: 2.5vh;
   border-radius: 1vh;
   padding-left: 0.5vh;
-  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN",
+    "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
 }
 
 button {
   font-size: 2.5vh;
   border: none;
   border-radius: 2vh;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
-  background-color: rgb(220, 158, 108);
+  background-color: rgba(220, 158, 108, 1);
   color: white;
   margin-left: 0.5vh;
 }
-
 button:hover {
   box-shadow: none;
   transform: translateY(0.5vh);
 }
-
 th {
   font-size: 2vh;
 }
 
 h2 {
-  color: rgb(118, 102, 82);
+  color: rgba(118, 102, 82, 1);
 }
 
 .App-logo {
@@ -61,6 +64,7 @@ h2 {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -84,4 +88,5 @@ h2 {
     transform: rotate(360deg);
   }
 }
-/* background-image: url("/public/images/bg.png"); *//*# sourceMappingURL=App.css.map */
+
+/* background-image: url("/public/images/bg.png"); */

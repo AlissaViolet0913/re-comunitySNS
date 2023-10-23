@@ -1,10 +1,98 @@
+@charset "UTF-8";
+.App {
+  background-color: rgb(145, 210, 199);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+  color: rgb(95, 95, 95);
+  font-size: 2.5vh;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+input {
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  padding-left: 0.5vh;
+}
+
+textarea {
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  padding-left: 0.5vh;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Modern", "Chalkboard", "Chalkboard SE" sans-serif;
+}
+
+button {
+  font-size: 2.5vh;
+  border: none;
+  border-radius: 2vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: rgb(220, 158, 108);
+  color: white;
+  margin-left: 0.5vh;
+}
+
+button:hover {
+  box-shadow: none;
+  transform: translateY(0.5vh);
+}
+
+th {
+  font-size: 2vh;
+}
+
+h2 {
+  color: rgb(118, 102, 82);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* background-image: url("/public/images/bg.png"); */
 .flex {
   display: flex;
   text-align: center;
+  margin-top: 15vh;
+  background-image: url("/public/images/back.png");
 }
 
 .back {
-  background-color: rgba(255, 254, 245, 1);
   margin-top: 2%;
   padding-top: 1%;
   height: 100%;
@@ -15,16 +103,17 @@
   width: 65%;
   margin-bottom: 5vh;
 }
+
 .detail {
   width: auto;
   height: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 4% 1vh;
-  border: dashed 0.5vh rgba(138, 121, 98, 1);
-  box-shadow: 0 0 0 1vh rgba(250, 248, 242, 1), 0 0 0 2vh rgba(138, 121, 98, 1);
-  border-radius: 1vh;
+  padding-top: 6%;
+  background-color: rgb(255, 254, 245);
+  box-shadow: 0 0 0 0.1vh rgb(138, 121, 98);
+  border-radius: 5vh 100vh/20vh 5vh;
 }
 
 .editbox {
@@ -33,14 +122,14 @@
 }
 
 .btn1 {
-  background-color: white;
+  background-color: rgb(255, 186, 59);
   width: 24vh;
   margin-top: 15px;
   font-weight: bold;
-  border-radius: 10vh;
-  color: rgba(94, 70, 44, 1);
-  border: 3px solid rgba(255, 182, 112, 1);
-  box-shadow: 0.7vh 0.7vh rgba(255, 182, 112, 1);
+  border-radius: 60% 80%/100% 80%;
+  color: rgb(94, 70, 44);
+  border: 3px solid rgb(255, 182, 112);
+  box-shadow: 0.7vh 0.7vh rgb(255, 142, 35);
   transition: 0.3s ease-in-out;
   height: 8vh;
 }
@@ -48,18 +137,19 @@
   box-shadow: none;
   transform: translate(5px, 5px);
   color: rgba(94, 70, 44, 0.6);
+  border-radius: 100% 80px/80px 100%;
 }
 
 .btn2 {
-  background-color: white;
+  background-color: rgb(107, 211, 255);
   width: 24vh;
   margin-left: 10%;
   margin-top: 10vh;
   font-weight: bold;
-  border-radius: 10vh;
-  color: rgba(94, 70, 44, 1);
-  border: 3px solid #27acd9;
-  box-shadow: 0.7vh 0.7vh #27acd9;
+  border-radius: 50% 80%/110% 80%;
+  color: rgb(94, 70, 44);
+  border: 3px solid #79cfec;
+  box-shadow: 0.7vh 0.7vh #56aecb;
   height: 8vh;
   transition: 0.3s ease-in-out;
 }
@@ -67,25 +157,31 @@
   box-shadow: none;
   transform: translate(5px, 5px);
   color: rgba(94, 70, 44, 0.6);
+  border-radius: 100% 80px/80px 100%;
+}
+
+.editbox {
+  margin-right: 10%;
 }
 
 #edit_btn {
   font-weight: bold;
-  color: rgba(94, 70, 44, 1);
-  border: 3px solid rgba(209, 182, 204, 1);
-  box-shadow: 0.7vh 0.7vh rgba(209, 182, 204, 1);
-  height: 7vh;
-  width: 20vh;
+  background-color: #ffed64;
+  border: 3px solid rgb(247, 242, 243);
+  color: rgb(118, 70, 3);
   margin-top: 5vh;
-  border-radius: 10vh;
+  margin-bottom: 3%;
+  border-radius: 50% 80%/110% 80%;
   transition: 0.3s ease-in-out;
-  background-color: white;
+}
+
+.editIcon {
+  width: 100px;
 }
 
 .icon {
   width: 23vh;
   height: 23vh;
-
   border-radius: 50%; /*サムネイル円型*/
 }
 
@@ -95,14 +191,17 @@
   text-align: center;
   margin: auto;
 }
+
 .tbody {
   width: 90%;
 }
+
 .th {
   text-align: right;
   width: 20%;
   font-weight: bold;
 }
+
 .td {
   width: 70%;
   height: 10vh;
@@ -137,9 +236,19 @@
   text-align: center;
   padding: 0.7vh 0;
   margin: 0 1vh;
-  background: #d7a31a;
-  color: #fff;
+  background-color: #ff6e9f;
+  color: white;
   box-sizing: border-box;
+}
+.ribbon3::after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0px;
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: #6e1331 rgb(255, 254, 245) #f25186;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .ribbon3 h3 {
@@ -153,4 +262,4 @@
 
 .title {
   margin-bottom: 1vh;
-}
+}/*# sourceMappingURL=islandDetail.module.css.map */

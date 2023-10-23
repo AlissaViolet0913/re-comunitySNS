@@ -135,6 +135,11 @@ export default function IslandDetail() {
             <div className={styles.editbox}>
               <button id={styles.edit_btn} onClick={Handler}>
                 編集・削除
+                <img
+                  src="/images/edit.png"
+                  alt="Edit"
+                  className={styles.editIcon}
+                ></img>
               </button>
             </div>
           )}

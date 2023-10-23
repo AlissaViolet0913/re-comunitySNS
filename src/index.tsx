@@ -39,11 +39,16 @@ export default function Index() {
   };
 
   return (
-    <>
-      <div className={styles.all}>
-        {/* ロゴ */}
-
-        <div className={styles.displayAll}>
+    <div className={styles.all}>
+      <img
+        className={styles.img}
+        id="img"
+        src="/images/bgA.png"
+        alt="Thumbnail"
+      ></img>
+      {/* ロゴ */}
+      <div className={styles.displayAll}>
+        <div className={styles.onImg}>
           <img
             src="/images/logo.png"
             className={styles.logo}
@@ -52,90 +57,110 @@ export default function Index() {
 
           <div className={styles.information}>
             <h3 className={styles.news}>お知らせ</h3>
-            {/* 個人用ポスト */}
             <PersonalPost
               hasNewMessage={hasNewMessage}
               setHasNewMessage={setHasNewMessage}
             />
-            {/* 参加サークルポスト */}
             <BelongIsland />
-            {/* 参加イベントポスト */}
             <BelongEvent />
           </div>
-          <div className={styles.main}>
-            <div className={styles.tabs}>
-              <button
-                className={`${tag === "islands" ? styles.active : ""} ${
-                  styles.buttonA
-                }`}
-                onClick={() => changeTagHandler("islands")}
-              >
-                おすすめ島
-              </button>
-              <button
-                className={`${tag === "events" ? styles.active : ""} ${
-                  styles.buttonB
-                }`}
-                onClick={() => changeTagHandler("events")}
-                name="新着イベント"
-                data-testid="newEvent"
-              >
-                新着イベント
-              </button>
-            </div>
-            <div className={styles.down}>
-              {tag === "islands" && (
-                <div className={styles.islands}>
-                  {islands.slice(0, 5).map((island) => (
-                    <div key={island.id} className={styles.island}>
-                      <Link to={`/island/${island.id}`} className={styles.link}>
+        </div>
+        <div className={styles.main}>
+          <div className={styles.tabs}>
+            <button
+              className={`${tag === "islands" ? styles.active : ""} ${
+                styles.buttonA
+              }`}
+              onClick={() => changeTagHandler("islands")}
+            >
+              おすすめ島
+            </button>
+            <button
+              className={`${tag === "events" ? styles.active : ""} ${
+                styles.buttonB
+              }`}
+              onClick={() => changeTagHandler("events")}
+              name="新着イベント"
+              data-testid="newEvent"
+            >
+              新着イベント
+            </button>
+          </div>
+          <div className={styles.down}>
+            {tag === "islands" && (
+              <div className={styles.islands}>
+                {islands.slice(0, 5).map((island) => (
+                  <div key={island.id} className={styles.island}>
+                    <Link to={`/island/${island.id}`} className={styles.link}>
+                      <img
+                        className={styles.icon}
+                        src={island.thumbnail || "/images/island.png"}
+                        alt="Event Thumbnail"
+                      />
+                      <h3 className={styles.islandName}>{island.islandName}</h3>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            )}
+            {tag === "events" && (
+              <div>
+                <div className={styles.events}>
+                  {events.slice(0, 5).map((event) => (
+                    <div key={event.id} className={styles.event}>
+                      <Link
+                        to={`/event/${event.id}`}
+                        className={styles.link}
+                        data-testid="eventLink"
+                      >
                         <img
-                          className={styles.icon}
-                          src={
-                            island.thumbnail ||
-                            "https://tfydnlbfauusrsxxhaps.supabase.co/storage/v1/object/public/userIcon/tanuki.PNG1351?t=2023-06-08T07%3A12%3A33.854Z"
-                          }
+                          className={styles.iconB}
+                          src={event.thumbnail || "/images/event.png"}
                           alt="Event Thumbnail"
                         />
-                        <h3 className={styles.islandName}>
-                          {island.islandName}
-                        </h3>
+                        <h3 className={styles.eventName}>{event.eventName}</h3>
                       </Link>
                     </div>
                   ))}
                 </div>
-              )}
-              {tag === "events" && (
-                <div>
-                  <div className={styles.events}>
-                    {events.slice(0, 5).map((event) => (
-                      <div key={event.id} className={styles.event}>
-                        <Link
-                          to={`/event/${event.id}`}
-                          className={styles.link}
-                          data-testid="eventLink"
-                        >
-                          <img
-                            className={styles.iconB}
-                            src={
-                              event.thumbnail ||
-                              "https://tfydnlbfauusrsxxhaps.supabase.co/storage/v1/object/public/userIcon/tanuki.PNG1351?t=2023-06-08T07%3A12%3A33.854Z"
-                            }
-                            alt="Event Thumbnail"
-                          />
-                          <h3 className={styles.eventName}>
-                            {event.eventName}
-                          </h3>
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
-    </>
+      <div className={styles.wave}>
+        {/* 画像描画 */}
+        <svg
+          className={styles.waves}
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shapeRendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g className={styles.move}>
+            {/* useタグ：svgの使い回し（特に色違いの場合に使用）、アニメーション */}
+            <use
+              xlinkHref="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgb(0, 151, 194, 0.7)"
+            />
+            <use
+              xlinkHref="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgb(0, 171, 199, 0.9)"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
   );
 }
